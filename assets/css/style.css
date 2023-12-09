@@ -1,0 +1,186 @@
+:root {
+  --white: #fff;
+  --dark-blue: #13293d;
+  --tan: rgb(239,190,125);
+  --border-radius: 50px;
+  --farley: flex-start;
+  --lilas: rgb(157, 150, 255);
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* justify-content: flex-start; */
+  justify-content: var(--farley);
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-left: 20px;
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding: 30px;
+  background-color: var(--tan);
+  height: 80px;
+}
+
+#dollar-sign {
+  height: 20px;
+  padding: none;
+}
+
+#balance {
+  font-size: 20px;
+  padding: 10px;
+  background-color: var(--lilas);
+  text-align: right;
+
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+
+#top-header {
+  padding: 40px;
+  text-align: center;
+  /* Refer to CSS values by the name of the custom property we assigned it */
+  background: white;
+  color: var(--lilas);
+  display: column;
+  margin: auto;
+  width: iherit;
+}
+
+#card-header {
+  padding: 40px;
+  /* Refer to CSS values by the name of the custom property we assigned it */
+  background: var(--lilas);
+  color: white;
+  display: flex;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  padding: 20px;
+  font-family: 'Pacifico', cursive;
+  font-size:30px;
+  text-align: center;
+  padding-left: 20px;
+}
+
+
+nav {
+  display: flex;
+  background-color: var(--lilas);
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  flex:auto;
+}
+
+nav a:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background: var(--dark-blue);
+  color: var(--white);
+  margin-top: auto;
+  font-size: 10px;
+}
+
+.donations, .fostering {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  background-color: var(--white);
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  flex: 0 0 300px;
+  transform: rotate(5deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
+}
+
+
+.card > p {
+  text-align: center;
+}
+
+.card > img {
+  width: 100%;
+  height: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
+
+
+.care, .boarding {
+  margin-top: 20px;
+}
+
+
+.care, .boarding, .cost, .location, .button {
+  padding: 5px;
+}
+
+button {
+  padding: 4px; 
+  border: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: red;
+}
+
+#logo {
+  width: 100px;
+  height: 50%;
+}
+
+.slideshow {
+  font-weight: bolder;
+  background-color: white;
+  color: tan;
+  font-size: 30px;
+}
+.slideshow:hover {
+  background-color: white;
+  font-size: 50px;
+}
